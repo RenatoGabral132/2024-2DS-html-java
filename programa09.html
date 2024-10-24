@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programa09</title>
+    <title> Número Secreto II </title>
 </head>
 <body>
     <script>
         function pulaLinha() {
-           document.write(' <br>')
-       }
+            document.write('<br>')
+        }
 
-       function mostrar(texto){
-           document.write(texto)
-           pulaLinha()
-       }
+        function mostrar(texto){
+            document.write(texto)
+            pulaLinha()
+        }
+        
+        let numeroPensado = Math.round(Math.random() * 10)
+        console.log(numeroPensado)
 
-       let numeroPensado = Math.round(Math.random() * 10)
+        let tentativa = 1
 
-       let tentativa = 1
-
-       while(tentativa <= 3){
+        while(tentativa <= 3){
             let chute = parseInt(prompt('Digite um número de 0 a 10'))
-            
+
             if(numeroPensado == chute){
-                mostrar('você acertou')
+                mostrar('Você acertou')
                 break
-            } else {
-                mostrar('você errou, tente novamente')
+            }else{
+                mostrar('Você errou, tente novamente')
             }
 
             tentativa = tentativa + 1
-          }  
-          mostrar(`você não tem mais tentativas, o número pensado era ${numeroPensado}`)
+        }
+        
+        mostrar(`O número pensado era ${numeroPensado}`)
 
-
-       </script>
+    </script>
 </body>
 </html>

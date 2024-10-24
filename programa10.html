@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Olimpiadas </title>
+    <title> Estrelas </title>
 </head>
+
 <body>
     <script>
         function pulaLinha() {
             document.write('<br>')
         }
 
-        function mostrar(texto){
+        function mostrar(texto) {
             document.write(texto)
             pulaLinha()
         }
 
-        let anoOlimpiadas = 1896
+        for (let i = 1; i <= 3; i++) {
 
-        while(anoOlimpiadas <= 2024){
-            mostrar('Teve olimpiadas em ' + anoOlimpiadas)
-            anoOlimpiadas = anoOlimpiadas + 4
+            for (let j = 1; j <= 10; j++) {
+                document.write('*')
+            }
+            pulaLinha()
+
         }
+
     </script>
 </body>
+
 </html>
