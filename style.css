@@ -19,7 +19,6 @@
 body{
     background-color: var(--cor-fundo);
     font-family: var(--fonte-texto);
-    flex-direction: column;
 }
 header, footer{
     background-color: var(--cor-cabecalho);
