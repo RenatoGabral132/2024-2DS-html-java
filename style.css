@@ -19,6 +19,7 @@
 body{
     background-color: var(--cor-fundo);
     font-family: var(--fonte-texto);
+    flex-direction: column;
 }
 header, footer{
     background-color: var(--cor-cabecalho);
@@ -34,7 +35,7 @@ header h1{
 .projetos{
     padding: 2em;
     display: flex;
-    flex direction: columns: ;
+    flex-direction: column;
 }
 .cartao{
     text-align: center;
